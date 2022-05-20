@@ -56,7 +56,7 @@ public class StatsService {
     public int overAverageSales(long[] sales, int averageSumSales) {
         int overAverageMonths = 0;
         for (int i = 0; i < sales.length; i++) {
-            if (sales[i] < averageSumSales) {
+            if (sales[i] > averageSumSales) {
                 overAverageMonths = overAverageMonths + 1;
             }
         }
